@@ -1,14 +1,25 @@
+<!-- base.html -->
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>{% block title %}My Blog{% endblock %}</title>
+    <meta charset="UTF-8">
+    <title>{% block title %}BBE site{% endblock %}</title>
+    {% block extrahead %}
+    {% endblock %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
-        <h1>Welcome to Kinopoisk</h1>
+        <div class="company-name">Kinopoisk/div>
     </header>
-    <div>
-        {% block content %} {% endblock %}
-    </div>
+    {% block content %}
+    <!-- Основное содержимое страницы -->
+    {% endblock %}
+    <footer>
+        <div class="footer-content">
+            Created by Mihail
+        </div>
+    </footer>
 </body>
 </html>

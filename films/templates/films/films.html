@@ -1,0 +1,35 @@
+{% extends "films/base.html" %}
+
+{% block title %}Список фильмов{% endblock %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'films_styles.css' %}">
+
+{% block content %}
+<div class="container">
+    <form method="post" action="{% url 'get_film' %}">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Username:">
+        <input type="text" name="director" placeholder="Email:">
+        <input type="text" name="release_date" placeholder="Phone:">
+        <button type="submit" name="add">Add</button>
+    </form>
+    <ul>
+        {% if films %}
+        {% for film in films %}
+        <li>
+            {{ film.title }}
+            {{ film.director }}
+            {{ film.release_date }}
+            <form method="post" action="{% url 'delete_person' person.id %}">
+                {% csrf_token %}
+                <button type="submit" name="delete">Удалить</button>
+            </form>
+        </li>
+        {% endfor %}
+        {% else %}
+        <li>Пользователей нет</li>
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}
