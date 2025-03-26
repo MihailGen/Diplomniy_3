@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from films.models import Film, Film_details, Genre, Tag
+from films.models import Film, Film_details, Genre, Tags
 
 class FilmSerializer(serializers.ModelSerializer): # создаем класс наследник от базового класса сериализатор на основе модели
     class Meta:
@@ -18,5 +18,5 @@ class GenreSerializer(serializers.ModelSerializer):
 
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Tag
+        model = Tags
         fields = "__all__"

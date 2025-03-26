@@ -1,0 +1,28 @@
+{% extends "films/base.html" %}
+
+{% block title %}Список фильмов{% endblock %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'films_styles.css' %}">
+
+{% block content %}
+<div class="container">
+    <ul>
+        {% if film_list %}
+        {% for film in film_list %}
+        <li>
+            {{ film.title }}
+            {{ film.director }}
+            {{ film.release_date }}
+            <form method="post" action="{% url 'delete_film' film.id %}">
+                {% csrf_token %}
+                <button type="submit" name="delete">Удалить</button>
+            </form>
+        </li>
+        {% endfor %}
+        {% else %}
+        <li>Фильмов нет</li>
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}

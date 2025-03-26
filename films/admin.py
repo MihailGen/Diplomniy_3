@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Film, Film_details, Genre, Tag
+from .models import Film, Film_details, Genre, Tags
 
 
 class Film_detailsInline(admin.StackedInline):
@@ -33,7 +33,7 @@ class GenreAdmin(admin.ModelAdmin):
     search_fields = ('film', 'genre')
     list_filter = ('film', 'genre')
 
-@admin.register(Tag)
+@admin.register(Tags)
 class TagAdmin(admin.ModelAdmin):
     list_display = ('name',)
     search_fields = ('name',)

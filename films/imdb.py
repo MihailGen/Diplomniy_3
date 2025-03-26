@@ -12,7 +12,7 @@ def base(request):
 API_KEY = "bf60be6"
 
 # 🎬 Вводим название фильма
-movie_title = input("Введите название фильма: ")
+movie_title = input("Roman Holiday")
 
 # 📌 Формируем URL запроса
 api_url = f"http://www.omdbapi.com/?t={movie_title}&apikey={API_KEY}"

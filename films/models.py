@@ -13,7 +13,7 @@ class Film(models.Model):
 
 class Film_details(models.Model):
     film = models.ForeignKey(Film, on_delete=models.CASCADE, related_name='Информация')
-    tags = models.ManyToManyField('Tag', related_name='task')
+    tags = models.ManyToManyField('Tags', related_name='Film_details')
     year = models.DateField(null=True, blank=True, verbose_name='Год выхода на экран')
     runtime = models.IntegerField(null=True, blank=True, verbose_name='Длительность (мин.)')
     writer = models.CharField(max_length=100, verbose_name='Сценарист')
@@ -45,6 +45,7 @@ class Genre(models.Model):
         ('ужасы', 'Ужасы'),
         ('мюзикл', 'Мюзикл'),
         ('художественный', 'Художественный'),
+        ('экшн', 'Экшн'),
     ]
     genre = models.CharField(max_length=200, choices=GENRE_CHOICES, default='Художественный')
     class Meta:
@@ -55,7 +56,7 @@ class Genre(models.Model):
         return f'Фильм: {self.film}'
 
 
-class Tag(models.Model):
+class Tags(models.Model):
     name = models.CharField(max_length=50, verbose_name='Название тега')
 
     class Meta:

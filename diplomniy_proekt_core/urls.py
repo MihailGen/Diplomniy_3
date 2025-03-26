@@ -26,4 +26,5 @@ urlpatterns = [
     path('films/', views.films),
     path('', include('films.urls')),
     path('api-auth/', include('rest_framework.urls')),
+    path('delete/<int:film_id>/', views.delete_film, name='delete_film'),
 ]
