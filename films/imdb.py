@@ -1,12 +1,7 @@
-import requests  # Для отправки HTTP-запросов
 import json  # Для работы с JSON
 import os  # Для работы с файлами
 
-"""
-def base(request):
-    return render(request, 'films/base.html')
-
-"""
+import requests  # Для отправки HTTP-запросов
 
 # 🔑 ВАЖНО: Укажите ваш API-ключ (замените "YOUR_API_KEY" на ваш ключ)
 API_KEY = "bf60be6"

@@ -1,0 +1,40 @@
+{
+    "Title": "Oasis",
+    "Year": "2002",
+    "Rated": "N/A",
+    "Released": "07 May 2004",
+    "Runtime": "133 min",
+    "Genre": "Drama, Romance",
+    "Director": "Lee Chang-dong",
+    "Writer": "Lee Chang-dong",
+    "Actors": "Sul Kyung-gu, Moon So-ri, Ahn Nae-sang",
+    "Plot": "An irresponsible and childish ex-con befriends a girl with cerebral palsy and develops a progressively stronger bond with her.",
+    "Language": "Korean",
+    "Country": "South Korea",
+    "Awards": "26 wins & 3 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZjAwZWVjOGMtODA5OS00YWEwLWFhYTYtZGRlZWYxNzkzYzE1XkEyXkFqcGc@._V1_SX300.jpg",
+    "Ratings": [
+        {
+            "Source": "Internet Movie Database",
+            "Value": "7.8/10"
+        },
+        {
+            "Source": "Rotten Tomatoes",
+            "Value": "90%"
+        },
+        {
+            "Source": "Metacritic",
+            "Value": "79/100"
+        }
+    ],
+    "Metascore": "79",
+    "imdbRating": "7.8",
+    "imdbVotes": "10,686",
+    "imdbID": "tt0320193",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "$10,304",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}
