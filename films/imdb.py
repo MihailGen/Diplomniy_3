@@ -2,17 +2,12 @@ import requests  # Для отправки HTTP-запросов
 import json  # Для работы с JSON
 import os  # Для работы с файлами
 
-"""
-def base(request):
-    return render(request, 'films/base.html')
-
-"""
 
 # 🔑 ВАЖНО: Укажите ваш API-ключ (замените "YOUR_API_KEY" на ваш ключ)
 API_KEY = "bf60be6"
 
 # 🎬 Вводим название фильма
-movie_title = input("Roman Holiday")
+movie_title = input("The Brutalist")
 
 # 📌 Формируем URL запроса
 api_url = f"http://www.omdbapi.com/?t={movie_title}&apikey={API_KEY}"

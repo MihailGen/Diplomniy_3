@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe8f120-cb02-4d80-a846-2a970b9abe47" name="Changes" comment="created Forms">
-      <change afterPath="$PROJECT_DIR$/films/templates/films/films_old.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users_reviews/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/films/imdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/imdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/films/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_reviews/templates/users_reviews/register.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
