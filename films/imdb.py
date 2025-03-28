@@ -7,7 +7,7 @@ import requests  # Для отправки HTTP-запросов
 API_KEY = "bf60be6"
 
 # 🎬 Вводим название фильма
-movie_title = input("Roman Holiday")
+movie_title = "The Conversation"
 
 # 📌 Формируем URL запроса
 api_url = f"http://www.omdbapi.com/?t={movie_title}&apikey={API_KEY}"

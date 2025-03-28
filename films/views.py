@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 from rest_framework import viewsets
-from django.shortcuts import get_object_or_404, redirect, render
 
 from films.models import Film, Film_details, Genre, Tags
 from films.serializers import FilmSerializer, Film_detailsSerializer, GenreSerializer, TagSerializer
@@ -25,9 +24,10 @@ def film_list(request):
     film_list = Film.objects.all().order_by('-release_date')
     return render(request, 'films/films.html', {'film_list': film_list})
 
+
 @require_POST
 def delete_film(film_id):
-    #film = Film.objects.get(id=film_id)
+    # film = Film.objects.get(id=film_id)
     film = get_object_or_404(Film, pk=film_id)
     film.delete()
     return redirect('films')

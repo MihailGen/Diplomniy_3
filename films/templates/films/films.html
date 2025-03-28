@@ -14,9 +14,9 @@
             {{ film.title }}
             {{ film.director }}
             {{ film.release_date }}
-            <form method="post" action="{% url 'delete' film.id %}">
+            <form method="get" action="{% url 'film_details' film.id %}">
                 {% csrf_token %}
-                <button type="submit" name="delete">Удалить</button>
+                <button type="submit" name="details">Подробнее</button>
             </form>
         </li>
         {% endfor %}
