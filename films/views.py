@@ -1,6 +1,8 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 from rest_framework import viewsets
+from rest_framework.permissions import AllowAny
+from rest_framework_simplejwt.views import TokenObtainPairView
 
 from films.models import Film, Film_details, Genre, Tags
 from films.serializers import FilmSerializer, Film_detailsSerializer, GenreSerializer, TagSerializer
@@ -51,3 +53,7 @@ class GenreViewSet(viewsets.ModelViewSet):  # Класс-контроллер, �
 class TagViewSet(viewsets.ModelViewSet):  # Класс-контроллер, для создания набора контроллеров на осное VieSet
     queryset = Tags.objects.all()  # Набор данных для работы в контроллерах
     serializer_class = TagSerializer  # класс-сериализатор
+
+from rest_framework_simplejwt.views import TokenObtainPairView
+class MyTokenObtainPairView(TokenObtainPairView):
+    permission_classes = (AllowAny,)
