@@ -1,0 +1,40 @@
+{
+    "Title": "Jaws",
+    "Year": "1975",
+    "Rated": "PG",
+    "Released": "20 Jun 1975",
+    "Runtime": "124 min",
+    "Genre": "Adventure, Drama, Horror",
+    "Director": "Steven Spielberg",
+    "Writer": "Peter Benchley, Carl Gottlieb",
+    "Actors": "Roy Scheider, Robert Shaw, Richard Dreyfuss",
+    "Plot": "When a massive killer shark unleashes chaos on a beach community off Long Island, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "Won 3 Oscars. 16 wins & 20 nominations total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYjViNDQzNmUtYzkxZi00NTk5LTljMmItYjJlZmZkODIxNjU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "Ratings": [
+        {
+            "Source": "Internet Movie Database",
+            "Value": "8.1/10"
+        },
+        {
+            "Source": "Rotten Tomatoes",
+            "Value": "97%"
+        },
+        {
+            "Source": "Metacritic",
+            "Value": "87/100"
+        }
+    ],
+    "Metascore": "87",
+    "imdbRating": "8.1",
+    "imdbVotes": "689,820",
+    "imdbID": "tt0073195",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "$267,263,625",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}

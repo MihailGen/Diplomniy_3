@@ -1,0 +1,36 @@
+{
+    "Title": "The Ascent",
+    "Year": "1977",
+    "Rated": "N/A",
+    "Released": "02 Apr 1977",
+    "Runtime": "111 min",
+    "Genre": "Drama, War",
+    "Director": "Larisa Shepitko",
+    "Writer": "Vasiliy Bykov, Yuri Klepikov, Larisa Shepitko",
+    "Actors": "Boris Plotnikov, Vladimir Gostyukhin, Sergey Yakovlev",
+    "Plot": "Two Soviet partisans on a mission to gather food contend with the winter cold, the occupying Germans, and their own psyches.",
+    "Language": "Russian, German",
+    "Country": "Soviet Union",
+    "Awards": "4 wins total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNDIwYjY1ZDUtYzc4Yi00OGMzLTkzMjMtZTMxNDhiMmM0OTljXkEyXkFqcGc@._V1_SX300.jpg",
+    "Ratings": [
+        {
+            "Source": "Internet Movie Database",
+            "Value": "8.2/10"
+        },
+        {
+            "Source": "Rotten Tomatoes",
+            "Value": "100%"
+        }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "8.2",
+    "imdbVotes": "10,773",
+    "imdbID": "tt0075404",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}

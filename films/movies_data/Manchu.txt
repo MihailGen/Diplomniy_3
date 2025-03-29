@@ -1,0 +1,36 @@
+{
+    "Title": "The Mask of Fu Manchu",
+    "Year": "1932",
+    "Rated": "G",
+    "Released": "05 Nov 1932",
+    "Runtime": "69 min",
+    "Genre": "Adventure, Horror, Sci-Fi",
+    "Director": "Charles Brabin, Charles Vidor",
+    "Writer": "Irene Kuhn, Edgar Allan Woolf, John Willard",
+    "Actors": "Boris Karloff, Lewis Stone, Karen Morley",
+    "Plot": "Englishmen race to find the tomb of Genghis Khan before the sinister Fu Manchu does.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "1 nomination",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYjBjZjk1NWUtNjZmNS00ZTJiLTliN2ItM2JjNjgwYTU1Y2Y0XkEyXkFqcGc@._V1_SX300.jpg",
+    "Ratings": [
+        {
+            "Source": "Internet Movie Database",
+            "Value": "6.2/10"
+        },
+        {
+            "Source": "Rotten Tomatoes",
+            "Value": "88%"
+        }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.2",
+    "imdbVotes": "3,867",
+    "imdbID": "tt0023194",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}
