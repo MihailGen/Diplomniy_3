@@ -51,7 +51,9 @@ class Reviews(models.Model):
 
 # модель "Рейтинг"
 class Ratings(models.Model):
-    RATING_CHOICES = [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (7, 7), (8, 8), (9, 9), (10, 10)]
+    RATING_CHOICES = [(1, "Неудовлетворительно"), (2, "Почти удовлетворительно"), (3, "Удовлетворительно"),
+                      (4, "Весьма удовлетворительно"), (5, "Хорошо"), (6, "Весьма хорошо"), (7, "Очень хорошо"),
+                      (8, "Почти отлично"), (9, "Отлично"), (10, "Превосходно")]
     film = models.ForeignKey(Film, on_delete=models.CASCADE, related_name='Рейтинг')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='Рейтинг')
     rating = models.IntegerField(choices=RATING_CHOICES)

@@ -15,4 +15,30 @@
 <p>Награды: {{ film.awards}}</p>
 <p>Постер: {{ film.poster}}</p>
 <p>Сборы: {{ film.box_office}}</p>
+
+
+<div class="comments-section">
+    <h2>Комментарии</h2>
+    {% if user.is_authenticated %}
+    <form method="post" action="{% url 'reviews_create'%}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Отправить</button>
+    </form>
+    {% else %}
+    <p>Пожалуйста, <a href="{% url 'login' %}">войдите</a>, чтобы оставить комментарий.</p>
+    {% endif %}
+    <div id="comments-container">
+        <br>
+        {% for review in reviews %}
+
+        <div class="comment-positive">
+            <p><strong>{{ review.user.username }}</strong></p>
+            <p>{{ review.reviews_body }}</p>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}

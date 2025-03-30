@@ -3,8 +3,8 @@ from django.views.decorators.http import require_POST
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.views import TokenObtainPairView
-
 from films.models import Film, Film_details, Genre, Tags
+from users_reviews.models import Reviews, Ratings, Favourites
 from films.serializers import FilmSerializer, Film_detailsSerializer, GenreSerializer, TagSerializer
 
 
@@ -19,7 +19,8 @@ def films(request):
 
 def film_details(request, film_id):
     film = Film_details.objects.get(id=film_id)
-    return render(request, 'films/film_details.html', {'film': film})
+    reviews = Reviews.objects.filter(film=film_id)
+    return render(request, 'films/film_details.html', {'film': film, 'reviews': reviews})
 
 
 def film_list(request):
