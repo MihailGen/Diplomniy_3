@@ -1,9 +1,11 @@
 from django.contrib import admin
+
 from .models import Film, Film_details, Genre, Tags
 
 
 class Film_detailsInline(admin.StackedInline):
     model = Film_details
+
 
 class GenreInline(admin.TabularInline):
     model = Genre
@@ -32,6 +34,7 @@ class GenreAdmin(admin.ModelAdmin):
     list_display = ('id', 'film', 'genre')
     search_fields = ('film', 'genre')
     list_filter = ('film', 'genre')
+
 
 @admin.register(Tags)
 class TagAdmin(admin.ModelAdmin):

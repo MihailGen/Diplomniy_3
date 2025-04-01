@@ -21,6 +21,7 @@ def reviews_create(request, film_id):
     reviews.save()
     return redirect('film_details', film_id)
 
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)

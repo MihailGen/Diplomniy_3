@@ -2,10 +2,10 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
-from rest_framework_simplejwt.views import TokenObtainPairView
+
 from films.models import Film, Film_details, Genre, Tags
-from users_reviews.models import Reviews, Ratings, Favourites
 from films.serializers import FilmSerializer, Film_detailsSerializer, GenreSerializer, TagSerializer
+from users_reviews.models import Reviews
 
 
 def base(request):
@@ -55,6 +55,9 @@ class TagViewSet(viewsets.ModelViewSet):  # Класс-контроллер, д�
     queryset = Tags.objects.all()  # Набор данных для работы в контроллерах
     serializer_class = TagSerializer  # класс-сериализатор
 
+
 from rest_framework_simplejwt.views import TokenObtainPairView
+
+
 class MyTokenObtainPairView(TokenObtainPairView):
     permission_classes = (AllowAny,)
