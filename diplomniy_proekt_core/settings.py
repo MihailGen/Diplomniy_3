@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'crispy_bootstrap4',
 ]
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
@@ -140,4 +141,3 @@ REST_FRAMEWORK = {
 
 AUTH_USER_MODEL = 'users_reviews.User'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'

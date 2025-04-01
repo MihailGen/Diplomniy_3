@@ -25,7 +25,7 @@ class Film_details(models.Model):
     language = models.CharField(max_length=100, verbose_name='Язык')
     country = models.CharField(max_length=100, verbose_name='Страна')
     awards = models.CharField(max_length=100, verbose_name='Призы и награды')
-    poster = models.CharField(max_length=100, verbose_name='Ссылка на картинку')
+    poster = models.CharField(max_length=200, verbose_name='Ссылка на картинку')
     box_office = models.IntegerField(verbose_name='Бюджет')
 
     class Meta:
@@ -50,6 +50,7 @@ class Genre(models.Model):
         ('мюзикл', 'Мюзикл'),
         ('художественный', 'Художественный'),
         ('экшн', 'Экшн'),
+        ('фантастика', 'Фантастика'),
     ]
     genre = models.CharField(max_length=200, choices=GENRE_CHOICES, default='Художественный')
 

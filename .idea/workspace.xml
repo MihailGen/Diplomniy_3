@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe8f120-cb02-4d80-a846-2a970b9abe47" name="Changes" comment="created user">
-      <change afterPath="$PROJECT_DIR$/users_reviews/templates/users_reviews/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users_reviews/templates/users_reviews/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users_reviews/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/templates/films/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/films/templates/films/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/films/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/films/templates/films/film_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/films/templates/films/film_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/templates/films/films.html" beforeDir="false" afterPath="$PROJECT_DIR$/films/templates/films/films.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Kinopoisk_header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/Kinopoisk_header.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_reviews/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_reviews/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_reviews/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_reviews/templates/users_reviews/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/templates/users_reviews/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_reviews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
