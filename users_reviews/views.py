@@ -2,6 +2,7 @@ from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
+from django.views.decorators.http import require_POST
 from rest_framework import generics
 from rest_framework.permissions import AllowAny
 
@@ -14,11 +15,11 @@ from .serializers import RegisterSerializer, ReviewsSerializer, RatingsSerialize
 User = get_user_model()
 
 
-def reviews_create(request):
-    reviews = Reviews.objects.create(film=request.film_id, user=request.user)
+@require_POST
+def reviews_create(request, film_id):
+    reviews = Reviews.objects.create(user=request.user, reviews_body=request.POST.get('reviews'), film_id=film_id)
     reviews.save()
-    return render(request, 'films/film_details.html', {'film': request.film_id})
-
+    return redirect('film_details', film_id)
 
 def register(request):
     if request.method == 'POST':

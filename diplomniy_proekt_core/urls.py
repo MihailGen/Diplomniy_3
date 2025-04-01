@@ -22,8 +22,7 @@ urlpatterns = [
     path('register/', register, name='register'),
 
     path('', include('users_reviews.urls')),
-    path('reviews_create/', reviews_create, name='reviews_create'),
-    #path('reviews/create/', ReviewsCreateView.as_view(), name='reviews-create'),
+    path('reviews_create/<int:film_id>/', reviews_create, name='reviews_create'),
     path('reviews/', ReviewsListView.as_view(), name='comment-list'),
     path('reviews/<int:pk>/', ReviewsRetrievView.as_view(), name='comment-retrieve'),
     path('reviews/<int:pk>/update/', ReviewsUpdateView.as_view(), name='comment-update'),

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fe8f120-cb02-4d80-a846-2a970b9abe47" name="Changes" comment="created user">
+    <list default="true" id="2fe8f120-cb02-4d80-a846-2a970b9abe47" name="Changes" comment="created v3">
+      <change afterPath="$PROJECT_DIR$/films/templates/films/films_details_old.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/films/templates/films/film_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/films/templates/films/film_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/films/templates/films/films_old.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_reviews/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_reviews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_reviews/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -141,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743264029803</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created v3">
+      <option name="closed" value="true" />
+      <created>1743512416452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743512416452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,6 +160,7 @@
     <MESSAGE value="created Films model" />
     <MESSAGE value="created Forms" />
     <MESSAGE value="created user" />
-    <option name="LAST_COMMIT_MESSAGE" value="created user" />
+    <MESSAGE value="created v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="created v3" />
   </component>
 </project>

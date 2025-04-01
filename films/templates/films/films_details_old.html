@@ -20,12 +20,17 @@
 <div class="comments-section">
     <h2>Комментарии</h2>
     {% if user.is_authenticated %}
-    <form method="post" action="{% url 'reviews_create' film.film_id %}">
+    <form method="post" action="{% url 'reviews_create' %}">
         {% csrf_token %}
-        <input type="text" name="reviews" placeholder="Ваш комментарий">
+      <p>Text:  {{ form.as_p }} </p>
         <button type="submit">Отправить</button>
     </form>
 
+    <form method="post" action="{% url 'reviews_create' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit"/>
+    </form>
 
 
     {% else %}
