@@ -1,0 +1,40 @@
+{
+    "Title": "The Gentlemen",
+    "Year": "2019",
+    "Rated": "R",
+    "Released": "24 Jan 2020",
+    "Runtime": "113 min",
+    "Genre": "Action, Crime",
+    "Director": "Guy Ritchie",
+    "Writer": "Guy Ritchie, Ivan Atkinson, Marn Davies",
+    "Actors": "Matthew McConaughey, Charlie Hunnam, Michelle Dockery",
+    "Plot": "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+    "Language": "English, Russian, Spanish, Chinese",
+    "Country": "United States, United Kingdom",
+    "Awards": "1 win & 4 nominations total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjE2ZjQ4ZGMtZjFhMi00NmI5LTliNjEtODczMWMxNjliZjgxXkEyXkFqcGc@._V1_SX300.jpg",
+    "Ratings": [
+        {
+            "Source": "Internet Movie Database",
+            "Value": "7.8/10"
+        },
+        {
+            "Source": "Rotten Tomatoes",
+            "Value": "75%"
+        },
+        {
+            "Source": "Metacritic",
+            "Value": "51/100"
+        }
+    ],
+    "Metascore": "51",
+    "imdbRating": "7.8",
+    "imdbVotes": "429,432",
+    "imdbID": "tt8367814",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "$36,471,795",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}

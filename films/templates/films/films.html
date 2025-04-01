@@ -7,6 +7,11 @@
 
 {% block content %}
 <div class="container">
+    <form class="d-flex search-form" role="search" action="{% url 'films_list' %}" method="get">
+                    <input class="form-control me-2" type="search" title="Ann" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form>
+
     <ul>
         {% if film_list %}
         {% for film in film_list %}
@@ -14,9 +19,9 @@
             {{ film.title }}
             {{ film.director }}
             {{ film.release_date }}
-            <form method="post" action="{% url 'delete_film' film.id %}">
+            <form action="{% url 'film_details' film.id %}"  method="get">
                 {% csrf_token %}
-                <button type="submit" name="delete">Удалить</button>
+                <button type="submit" name="details">Подробнее</button>
             </form>
         </li>
         {% endfor %}

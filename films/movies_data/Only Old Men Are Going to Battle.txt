@@ -1,0 +1,32 @@
+{
+    "Title": "Only Old Men Are Going to Battle",
+    "Year": "1974",
+    "Rated": "N/A",
+    "Released": "12 Aug 1974",
+    "Runtime": "92 min",
+    "Genre": "Comedy, Drama, War",
+    "Director": "Leonid Bykov",
+    "Writer": "Leonid Bykov, Yevgeni Onopriyenko, Aleksandr Satsky",
+    "Actors": "Leonid Bykov, Sergey Podgornyy, Sergei Ivanov",
+    "Plot": "During World War II, a Soviet veteran pilot teaches newcomers that war is transient, and music is eternal.",
+    "Language": "Russian, Ukrainian",
+    "Country": "Soviet Union",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZGIxM2IwYzEtMjRjMi00NTNkLThjYjYtYTQ2ZjUyZTRkZWVkXkEyXkFqcGc@._V1_SX300.jpg",
+    "Ratings": [
+        {
+            "Source": "Internet Movie Database",
+            "Value": "8.2/10"
+        }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "8.2",
+    "imdbVotes": "5,958",
+    "imdbID": "tt0070861",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}

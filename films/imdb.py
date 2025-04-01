@@ -1,13 +1,13 @@
-import requests  # Для отправки HTTP-запросов
 import json  # Для работы с JSON
 import os  # Для работы с файлами
 
+import requests  # Для отправки HTTP-запросов
 
 # 🔑 ВАЖНО: Укажите ваш API-ключ (замените "YOUR_API_KEY" на ваш ключ)
 API_KEY = "bf60be6"
 
 # 🎬 Вводим название фильма
-movie_title = input("The Brutalist")
+movie_title = "The Conversation"
 
 # 📌 Формируем URL запроса
 api_url = f"http://www.omdbapi.com/?t={movie_title}&apikey={API_KEY}"

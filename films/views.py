@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 from rest_framework import viewsets
-from django.shortcuts import get_object_or_404, redirect, render
-
+from rest_framework.permissions import AllowAny
+from rest_framework_simplejwt.views import TokenObtainPairView
 from films.models import Film, Film_details, Genre, Tags
+from users_reviews.models import Reviews, Ratings, Favourites
 from films.serializers import FilmSerializer, Film_detailsSerializer, GenreSerializer, TagSerializer
 
 
@@ -18,16 +19,18 @@ def films(request):
 
 def film_details(request, film_id):
     film = Film_details.objects.get(id=film_id)
-    return render(request, 'films/film_details.html', {'film': film})
+    reviews = Reviews.objects.filter(film=film_id)
+    return render(request, 'films/film_details.html', {'film': film, 'reviews': reviews})
 
 
 def film_list(request):
     film_list = Film.objects.all().order_by('-release_date')
     return render(request, 'films/films.html', {'film_list': film_list})
 
+
 @require_POST
 def delete_film(film_id):
-    #film = Film.objects.get(id=film_id)
+    # film = Film.objects.get(id=film_id)
     film = get_object_or_404(Film, pk=film_id)
     film.delete()
     return redirect('films')
@@ -51,3 +54,7 @@ class GenreViewSet(viewsets.ModelViewSet):  # Класс-контроллер, �
 class TagViewSet(viewsets.ModelViewSet):  # Класс-контроллер, для создания набора контроллеров на осное VieSet
     queryset = Tags.objects.all()  # Набор данных для работы в контроллерах
     serializer_class = TagSerializer  # класс-сериализатор
+
+from rest_framework_simplejwt.views import TokenObtainPairView
+class MyTokenObtainPairView(TokenObtainPairView):
+    permission_classes = (AllowAny,)
