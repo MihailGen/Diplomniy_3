@@ -13,6 +13,5 @@ router.register(r'tag', TagViewSet, basename='tags')
 urlpatterns = [
                 path('', include(router.urls)),
                 path('details/<int:film_id>/', film_details, name='film_details'),
-                #path('films/', film_list, name='films_list'),
                 path('delete/<int:film_id>/', delete_film, name='delete_film'),
               ] + router.urls
