@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe8f120-cb02-4d80-a846-2a970b9abe47" name="Changes" comment="created v4">
-      <change afterPath="$PROJECT_DIR$/films/templates/films/search_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/films/templates/films/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/diplomniy_proekt_core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/templates/films/films.html" beforeDir="false" afterPath="$PROJECT_DIR$/films/templates/films/films.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/templates/films/films_details_old.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/films/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/films/templates/films/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/films/templates/films/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/Kinopoisk_header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/Kinopoisk_header.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

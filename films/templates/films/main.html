@@ -1,0 +1,32 @@
+{% extends "films/base.html" %}
+
+{% block title %}Список фильмов{% endblock %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'films_styles.css' %}">
+
+{% block content %}
+    <form class="d-flex search-form" role="search" action="{% url 'search_results' %}" method="get">
+                    <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form>
+
+    <ul>
+        {% if film_list %}
+        {% for film in film_list %}
+        <li>
+            {{ film.title }}
+            {{ film.director }}
+            {{ film.release_date }}
+            <form action="{% url 'film_details' film.id %}"  method="get">
+                {% csrf_token %}
+                <button type="submit" name="details">Подробнее</button>
+            </form>
+        </li>
+        {% endfor %}
+        {% else %}
+        <li>Фильмов нет</li>
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}
