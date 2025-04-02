@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import FilmViewSet, Film_detailsViewSet, GenreViewSet, TagViewSet, film_details, film_list, delete_film
+from .views import FilmViewSet, Film_detailsViewSet, GenreViewSet, TagViewSet, film_details, film_list, delete_film, SearchResultsView
 
 app_name = 'films'
 

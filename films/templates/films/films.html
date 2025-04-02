@@ -6,9 +6,8 @@
 <link rel="stylesheet" href="{% static 'films_styles.css' %}">
 
 {% block content %}
-<div class="container">
-    <form class="d-flex search-form" role="search" action="{% url 'films_list' %}" method="get">
-                    <input class="form-control me-2" type="search" title="Ann" placeholder="Search" aria-label="Search">
+    <form class="d-flex search-form" role="search" action="{% url 'search_results' %}" method="get">
+                    <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success text-white" type="submit">Search</button>
                 </form>
 

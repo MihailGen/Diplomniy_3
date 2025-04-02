@@ -1,0 +1,19 @@
+{% extends 'films/base.html' %}
+
+{% block title %}Информация о фильме{% endblock %}
+
+{% block content %}
+
+<h1>Search Results</h1>
+
+<ul>
+  {% for film in film_list %}
+    <li>
+      Название: {{ film.title }}
+      Директор: {{ film.director }}
+      Премьера: {{ film.release_date }}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

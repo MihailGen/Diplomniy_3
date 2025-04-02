@@ -13,6 +13,7 @@ urlpatterns = [
     path('films/', views.film_list, name='films_list'),
     #path('films/', views.films),
     path('', include('films.urls')),
+    path('search/', views.SearchResultsView.as_view(), name='search_results'),
     path('api-auth/', include('rest_framework.urls')),
     path('delete/<int:film_id>/', views.delete_film, name='delete_film'),
     path('details/<int:film_id>/', views.film_details, name='film_details'),

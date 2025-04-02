@@ -1,5 +1,7 @@
+from django.db.models import Q
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
+from django.views.generic import ListView
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -34,6 +36,17 @@ def delete_film(film_id):
     film = get_object_or_404(Film, pk=film_id)
     film.delete()
     return redirect('films')
+
+
+class SearchResultsView(ListView):
+    model = Film
+    template_name = 'films/search_results.html'
+    def get_queryset(self):  # новый
+        query = self.request.GET.get('q')
+        film_list = Film.objects.filter(
+            Q(title__icontains=query)
+        )
+        return film_list
 
 
 class FilmViewSet(viewsets.ModelViewSet):  # Класс-контроллер, для создания набора контроллеров на осное VieSet
