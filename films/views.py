@@ -7,7 +7,7 @@ from rest_framework.permissions import AllowAny
 
 from films.models import Film, Film_details, Genre, Tags
 from films.serializers import FilmSerializer, Film_detailsSerializer, GenreSerializer, TagSerializer
-from users_reviews.models import Reviews
+from users_reviews.models import Reviews, Ratings
 
 
 def base(request):
@@ -22,7 +22,14 @@ def films(request):
 def film_details(request, film_id):
     film = Film_details.objects.get(id=film_id)
     reviews = Reviews.objects.filter(film=film_id)
-    return render(request, 'films/film_details.html', {'film': film, 'reviews': reviews})
+
+    try:
+        rating = Ratings.objects.get(film_id=film_id, user_id=request.user)
+    except:
+        rating = 0
+
+    print(rating)
+    return render(request, 'films/film_details.html', {'film': film, 'reviews': reviews, 'rating': rating})
 
 
 def film_list(request):

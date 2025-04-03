@@ -3,7 +3,7 @@ from django.urls import path, include
 from films import views
 from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView,)
 from users_reviews.views import (RegisterView, register, reviews_create, ReviewsListView, ReviewsRetrievView,
-                                 ReviewsUpdateView, ReviewsDestroyView)
+                                 ReviewsUpdateView, ReviewsDestroyView, rating_create)
 
 
 urlpatterns = [
@@ -24,6 +24,7 @@ urlpatterns = [
 
     path('', include('users_reviews.urls')),
     path('reviews_create/<int:film_id>/', reviews_create, name='reviews_create'),
+    path('rating_create/<int:film_id>/', rating_create, name='rating_create'),
     path('reviews/', ReviewsListView.as_view(), name='comment-list'),
     path('reviews/<int:pk>/', ReviewsRetrievView.as_view(), name='comment-retrieve'),
     path('reviews/<int:pk>/update/', ReviewsUpdateView.as_view(), name='comment-update'),

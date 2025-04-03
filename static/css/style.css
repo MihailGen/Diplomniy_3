@@ -1,28 +1,20 @@
-{
-  background-color: #007b9f;
-}
-
-    body {
-    line-height: 1;
-    }
-    li {
-    list-style: none;
-    padding: 00px 00px 00px 00px ;
-    }
-    ol, ul {
-    list-style: none;
-    padding: 00px 00px 00px 30px ;
-    }
-
 body {
 	background: none repeat scroll 0% 0% rgb(255, 255, 255);
-	font: 400 100%/1.625 "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: 400 100%/1.625 "Montserrat", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	color: #3B3B3B;
 	font-weight:400;
 }
-.fl{float: left;}
-.fr{float: right;}
+
+p {
+    font-family: "Montserrat","Open Sans","Helvetica Neue",Helvetica Neue, Arial, Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 40px;
+    align: left;
+}
+
 h1 {
 	font-weight:400;
 	line-height:1.1em;
@@ -36,9 +28,10 @@ h1 {
 	color: rgb(0, 170, 238);
 	text-decoration: none;
 }
+
 h2 {
-	font: 60 100%/1.625 "Open Sans","Helvetica Neue",Helvetica Neue,Arial,sans-serif;
-	font-size:30px;
+	font: 60 100%/1.625 "Montserrat", "Open Sans","Helvetica Neue",Helvetica Neue,Arial,sans-serif;
+	font-size: 30px;
 	color: rgb(0, 0, 238);
 	padding:5px 20px;
 	clear:both;
@@ -47,20 +40,48 @@ h2 {
 }
 
 li {
-font: 200 100%/1.625 "Open Sans","Helvetica Neue",Helvetica Neue,Arial,sans-serif;
-color: #2F4F4F;
-font-size: 20px;
-font-weight:normal;
+    font: 200 100%/1.625 "Montserrat", "Open Sans","Helvetica Neue", Helvetica Neue,Arial,sans-serif;
+    color: #2F4F4F;
+    font-size: 20px;
+    font-weight:normal;
 }
 
 ul.left {
-padding: 0px 10px 0px 10px ;}
+     text-align: left;
+     padding: 0px 00px 0px 00px;
+}
 
 ul.right {
-text-align: right ;
-padding: 0px 10px 0px 10px ;
+    text-align: right;
+    padding: 0px 00px 0px 00px;
 }
+
 a:link, a:visited {
 	text-decoration:none;
 	color:#0077BB;
+    align: left;
+	width: 700px;
+}
+
+.horizontal-line {
+    width:1000px;
+    text-align:left;
+    float:left;
+    background:linear-gradient(90deg, #2F73B6, #39B6E8);
+    border:none!important;
+    border-radius:2px;
+    height:3px;
+}
+
+
+.rating-section {
+  width:600px;
+  box-sizing: inherit;
+  border: 1px solid #00f;
+  background: #FFCA28;
+  padding: 10px;
+  opacity: 0.8;
+  position: absolute;
+  left: 25%;
+  top: 50%;
 }

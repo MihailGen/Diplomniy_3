@@ -22,6 +22,13 @@ def reviews_create(request, film_id):
     return redirect('film_details', film_id)
 
 
+@require_POST
+def rating_create(request, film_id):
+    rating = Ratings.objects.create(user=request.user, rating=request.POST.get('rating'), film_id=film_id)
+    rating.save()
+    return redirect('film_details', film_id)
+
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)

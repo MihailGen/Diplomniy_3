@@ -8,12 +8,12 @@
 <p>Создано: {{ film.year }}</p>
 <p>Длительность: {{ film.runtime }}</p>
 <p>Автор сценария: {{ film.writer }}</p>
-<p>Актёры: {{ film.actors}}</p>
-<p>Содержание: {{ film.plot}}</p>
-<p>Язык: {{ film.language}}</p>
-<p>Cтрана: {{ film.country}}</p>
-<p>Награды: {{ film.awards}}</p>
-<p>Сборы: {{ film.box_office}}</p>
+<p>Актёры: {{ film.actors }}</p>
+<p>Содержание: {{ film.plot }}</p>
+<p>Язык: {{ film.language }}</p>
+<p>Cтрана: {{ film.country }}</p>
+<p>Награды: {{ film.awards }}</p>
+<p>Сборы: {{ film.box_office }}</p>
 <img src="{{ film.poster}}" width=”125" height=”200" align="left">
 
 
@@ -25,9 +25,6 @@
         <input type="text" name="reviews" placeholder="Ваш комментарий">
         <button type="submit">Отправить</button>
     </form>
-
-
-
     {% else %}
     <p>Пожалуйста, <a href="{% url 'login' %}">войдите</a>, чтобы оставить комментарий.</p>
     {% endif %}
@@ -42,6 +39,24 @@
 
         {% endfor %}
     </div>
+</div>
+
+<div class="rating-section">
+    {% if rating %}
+    <h2>Ваш рейтинг: {{ rating.rating }}</h2>
+    {% else %}
+    <h2>Вы ещё не оценили этот фильм!</h2>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+    <form method="post" action="{% url 'rating_create' film.film_id %}">
+        {% csrf_token %}
+        <input type="number" name="rating" placeholder="Ваша оценка">
+        <button type="submit">Отправить</button>
+    </form>
+    {% else %}
+    <p>Пожалуйста, <a href="{% url 'login' %}">авторизуйтесь</a>, чтобы оценить.</p>
+    {% endif %}
 </div>
 
 {% endblock %}

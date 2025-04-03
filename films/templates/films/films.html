@@ -2,8 +2,6 @@
 
 {% block title %}Список фильмов{% endblock %}
 
-{% load static %}
-<link rel="stylesheet" href="{% static 'films_styles.css' %}">
 
 {% block content %}
     <form class="d-flex search-form" role="search" action="{% url 'search_results' %}" method="get">
@@ -14,15 +12,17 @@
     <ul>
         {% if film_list %}
         {% for film in film_list %}
+        <br>
         <li>
-            {{ film.title }}
-            {{ film.director }}
-            {{ film.release_date }}
+            {{ film.title }} <br> <p>Директор: {{ film.director }} Премьера: {{ film.release_date }}</p>
             <form action="{% url 'film_details' film.id %}"  method="get">
                 {% csrf_token %}
                 <button type="submit" name="details">Подробнее</button>
             </form>
+            <hr class="horizontal-line">
+
         </li>
+
         {% endfor %}
         {% else %}
         <li>Фильмов нет</li>
