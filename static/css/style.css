@@ -32,10 +32,10 @@ h1 {
 h2 {
 	font: 60 100%/1.625 "Montserrat", "Open Sans","Helvetica Neue",Helvetica Neue,Arial,sans-serif;
 	font-size: 30px;
-	color: rgb(0, 0, 238);
+	color: #8B0000;
 	padding:5px 20px;
 	clear:both;
-	background:#eee;
+	background: #FFEBCD;
 	font-weight:200;
 }
 
@@ -64,24 +64,45 @@ a:link, a:visited {
 }
 
 .horizontal-line {
-    width:1000px;
+    width: 1000px;
     text-align:left;
     float:left;
-    background:linear-gradient(90deg, #2F73B6, #39B6E8);
-    border:none!important;
-    border-radius:2px;
-    height:3px;
+    height:1px;
 }
 
+.foto {
+width: 50px;
+float: left;
+margin: 4px 10px 2px 0px;
+}
 
 .rating-section {
-  width:600px;
+  width:500px;
+  height:160px;
   box-sizing: inherit;
-  border: 1px solid #00f;
-  background: #FFCA28;
-  padding: 10px;
-  opacity: 0.8;
+  border: 1px solid #8B0000;
+  background: #FFEBCD;
+  padding: 20px;
+  opacity: 10;
   position: absolute;
-  left: 25%;
-  top: 50%;
+  left: 36%;
+  top: 60%;
+  align: center;
+}
+
+#number {
+  width: 55px;
+  height: 40px;
+  font-size: 35px
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
 }

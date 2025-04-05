@@ -33,7 +33,10 @@ def film_details(request, film_id):
 
 
 def film_list(request):
-    film_list = Film.objects.all().order_by('-release_date')
+    #film_list = Film.objects.all().order_by('-release_date')
+    film_list = Film_details.objects.all().select_related('film')
+    #poster = Film_details.objects.filter('film').values('poster')
+
     return render(request, 'films/films.html', {'film_list': film_list})
 
 

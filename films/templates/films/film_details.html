@@ -5,15 +5,15 @@
 {% block content %}
 <h2>{{film}}</h2>
 <p>{{film.title }}</p>
-<p>Создано: {{ film.year }}</p>
-<p>Длительность: {{ film.runtime }}</p>
+<p>Дата премьеры: {{ film.year }}</p>
+<p>Длительность: {{ film.runtime }} мин</p>
 <p>Автор сценария: {{ film.writer }}</p>
 <p>Актёры: {{ film.actors }}</p>
 <p>Содержание: {{ film.plot }}</p>
 <p>Язык: {{ film.language }}</p>
 <p>Cтрана: {{ film.country }}</p>
 <p>Награды: {{ film.awards }}</p>
-<p>Сборы: {{ film.box_office }}</p>
+<p>Кассовые сборы: {{ film.box_office }} $</p>
 <img src="{{ film.poster}}" width=”125" height=”200" align="left">
 
 
@@ -51,7 +51,7 @@
     {% if user.is_authenticated %}
     <form method="post" action="{% url 'rating_create' film.film_id %}">
         {% csrf_token %}
-        <input type="number" name="rating" placeholder="Ваша оценка">
+        <input type="number" name="rating"  min="1" max="10" id="number">
         <button type="submit">Отправить</button>
     </form>
     {% else %}
