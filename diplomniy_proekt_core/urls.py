@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.urls import path, include
 from films import views
 from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView,)
+
+from films.views import film_details
 from users_reviews.views import (RegisterView, register, reviews_create, ReviewsListView, ReviewsRetrievView,
                                  ReviewsUpdateView, ReviewsDestroyView, rating_create)
 
@@ -11,6 +13,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('base/', views.base),
     path('films/', views.film_list, name='films_list'),
+    #path('details/<int:film_id>/', film_details, name='film_details'),
     #path('films/', views.films),
     path('', include('films.urls')),
     path('search/', views.SearchResultsView.as_view(), name='search_results'),
