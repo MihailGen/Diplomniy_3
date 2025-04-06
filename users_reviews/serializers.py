@@ -35,3 +35,8 @@ class FavouritesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Favourites
         fields = "__all__"
+
+class UserSerializer(serializers.ModelSerializer):# создаем класс наследник от базового класса сериализатор на основе модели
+    class Meta:
+        model = User
+        fields = '__all__'
