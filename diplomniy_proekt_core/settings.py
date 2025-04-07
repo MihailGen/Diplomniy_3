@@ -70,9 +70,12 @@ WSGI_APPLICATION = 'diplomniy_proekt_core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'ATOMIC_REQUESTS' : True,
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'filmopoisk',  # Имя вашей базы данных
+        'USER': 'Mihail',      # Имя пользователя
+        'PASSWORD': '111qqq111',  # Пароль пользователя
+        'HOST': 'localhost',   # Хост, по умолчанию 'localhost', опционально
+        'PORT': '5430',        # Порт, по умолчанию '5430', опционально
     }
 }
 
