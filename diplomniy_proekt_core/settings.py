@@ -71,11 +71,11 @@ WSGI_APPLICATION = 'diplomniy_proekt_core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'filmopoisk',  # Имя вашей базы данных
-        'USER': 'Mihail',      # Имя пользователя
-        'PASSWORD': '111qqq111',  # Пароль пользователя
-        'HOST': 'localhost',   # Хост, по умолчанию 'localhost', опционально
-        'PORT': '5430',        # Порт, по умолчанию '5430', опционально
+        'NAME': os.getenv('POSTGRES_DB', 'Users'),  # Имя вбазы данных
+        'USER': os.getenv('POSTGRES_USER', 'postgres'),  # Имя пользователя
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD', '2d5864a2'),  # Пароль пользователя
+        'HOST': os.getenv('POSTGRES_HOST', 'localhost'),  # Хост, по умолчанию 'localhost', опционально
+        'PORT': os.getenv('POSTGRES_PORT', '5432'),  # Порт, по умолчанию '5432', опционально
     }
 }
 
